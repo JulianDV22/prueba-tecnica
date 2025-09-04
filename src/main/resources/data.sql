@@ -1,0 +1,23 @@
+INSERT INTO employees (document_type, document_number, names, surnames, area, email, phone) VALUES
+('CC', '10000001', 'Juan',     'Pérez García',      'HR',         'juan.perez1@example.com',      '+57 3000000001'),
+('CE', '20000002', 'María',    'López Fernández',   'IT',         'maria.lopez2@example.com',     '+57 3000000002'),
+('PASSPORT', '30000003', 'Carlos',  'Rodríguez Soto',   'SALES',      'carlos.rodriguez3@example.com', '+57 3000000003'),
+('PPT', '40000004', 'Ana',      'Martínez Ruiz',    'MARKETING',  'ana.martinez4@example.com',    '+57 3000000004'),
+('CC', '10000005', 'Luis',     'Gómez Torres',     'FINANCE',    'luis.gomez5@example.com',      '+57 3000000005'),
+('CE', '20000006', 'Sofía',    'Ramírez Castro',   'OPERATIONS', 'sofia.ramirez6@example.com',   '+57 3000000006'),
+('PASSPORT', '30000007', 'Andrés',   'Hernández Vega',   'HR',         'andres.hernandez7@example.com', '+57 3000000007'),
+('PPT', '40000008', 'Camila',   'Jiménez Mora',     'IT',         'camila.jimenez8@example.com',  '+57 3000000008'),
+('CC', '10000009', 'Diego',    'Ríos Navarro',     'SALES',      'diego.rios9@example.com',      '+57 3000000009'),
+('CE', '20000010', 'Valentina','Ortega Silva',     'MARKETING',  'valentina.ortega10@example.com','+57 3000000010'),
+('PASSPORT', '30000011', 'John',     'Smith Johnson',    'FINANCE',    'john.smith11@example.com',   '+57 3000000011'),
+('PPT', '40000012', 'Emily',   'Brown Davis',       'OPERATIONS', 'emily.brown12@example.com',  '+57 3000000012'),
+('CC', '10000013', 'Michael', 'Wilson Miller',     'HR',         'michael.wilson13@example.com','+57 3000000013'),
+('CE', '20000014', 'Sarah',   'Taylor Anderson',   'IT',         'sarah.taylor14@example.com',  '+57 3000000014'),
+('PASSPORT', '30000015', 'David',   'Thomas Jackson',    'SALES',      'david.thomas15@example.com', '+57 3000000015'),
+('PPT', '40000016', 'Sophia',  'White Harris',      'MARKETING',  'sophia.white16@example.com',  '+57 3000000016'),
+('CC', '10000017', 'James',   'Martin Thompson',   'FINANCE',    'james.martin17@example.com',  '+57 3000000017'),
+('CE', '20000018', 'Olivia',  'Garcia Martinez',   'OPERATIONS', 'olivia.garcia18@example.com', '+57 3000000018'),
+('PASSPORT', '30000019', 'Robert',  'Martinez Robinson','HR',         'robert.martinez19@example.com','+57 3000000019'),
+('PPT', '40000020', 'Isabella','Clark Lewis',      'IT',         'isabella.clark20@example.com','+57 3000000020');
+
+
