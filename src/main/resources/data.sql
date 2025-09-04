@@ -21,3 +21,25 @@ INSERT INTO employees (document_type, document_number, names, surnames, area, em
 ('PPT', '40000020', 'Isabella','Clark Lewis',      'IT',         'isabella.clark20@example.com','+57 3000000020');
 
 
+INSERT INTO travels (destination) VALUES
+('New York, USA'),
+('London, UK'),
+('Tokyo, Japan'),
+('Paris, France'),
+('Berlin, Germany'),
+('Sydney, Australia'),
+('Toronto, Canada'),
+('Dubai, UAE'),
+('Rome, Italy'),
+('Madrid, Spain'),
+('Amsterdam, Netherlands'),
+('Singapore'),
+('Hong Kong'),
+('Bangkok, Thailand'),
+('Istanbul, Turkey'),
+('Moscow, Russia'),
+('Cape Town, South Africa'),
+('Buenos Aires, Argentina'),
+('Lima, Peru'),
+('Santiago, Chile');
+
