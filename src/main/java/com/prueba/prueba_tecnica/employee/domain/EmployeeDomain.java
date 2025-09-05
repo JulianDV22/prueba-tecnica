@@ -5,10 +5,15 @@ import lombok.*;
 
 @Entity
 @Table(name = "employees",
-        uniqueConstraints = @UniqueConstraint(
+        uniqueConstraints = {
+        @UniqueConstraint(
                 name = "uk_employee_doc",
                 columnNames = {"document_type", "document_number"}
-        )
+        ),
+        @UniqueConstraint(
+                name = "uk_employee_email",
+                columnNames = {"email"}
+        )}
 )
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor @Builder
