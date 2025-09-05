@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "a1e31d20-4acd-4e5f-9de2-10da3c3c2d42",
+		"name": "Prueba-Tecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27396639"
+	},
+	"item": [
+		{
+			"name": "Empleados",
+			"item": [
+				{
+					"name": "Obtener Todos los Empleados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Empleado por Nombres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/employees/search?names=juan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"search"
+							],
+							"query": [
+								{
+									"key": "names",
+									"value": "juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Empleado por ID de la Empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/employees/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener  Empleado por Tipo y Numero de Documento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/employees/by-doc/CE/20000010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"by-doc",
+								"CE",
+								"20000010"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener si un Empleado existe por Numero de Documento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/employees/exists?documentType=CE&documentNumber=20000010",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"exists"
+							],
+							"query": [
+								{
+									"key": "documentType",
+									"value": "CE"
+								},
+								{
+									"key": "documentNumber",
+									"value": "20000010"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Viajes",
+			"item": [
+				{
+					"name": "Obtener Todos los Viajes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/travels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"travels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Viaje por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/travels/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"travels",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Viaje por Destino",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/travels/by-destination/search?destination=dubai",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"travels",
+								"by-destination",
+								"search"
+							],
+							"query": [
+								{
+									"key": "destination",
+									"value": "dubai"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gastos",
+			"item": [
+				{
+					"name": "Obtener Gastos por Destino de Viaje",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bills/by-travel-destination?q=london",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"by-travel-destination"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "london"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Gastos por Nombre del Empleado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bills/by-employee-names?q=juan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"by-employee-names"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Gastos por Numero de Documento del Empleado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bills/by-employee-document-number?q=10000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"by-employee-document-number"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "10000001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Todos los Gastos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener el Valor Total de Todos los Gastos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bills/total-amount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"total-amount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Total por Empleado y Mes con Responsable del Gasto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bills/total-by-employee-month",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bills",
+								"total-by-employee-month"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Obtener Todos los Empleados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

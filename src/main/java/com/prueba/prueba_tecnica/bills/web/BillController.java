@@ -1,10 +1,8 @@
 package com.prueba.prueba_tecnica.bills.web;
 
-import com.prueba.prueba_tecnica.bills.domain.BillDomain;
 import com.prueba.prueba_tecnica.bills.dto.EmployeeBillDto;
 import com.prueba.prueba_tecnica.bills.service.BillService;
 import com.prueba.prueba_tecnica.bills.view.BillItemView;
-import com.prueba.prueba_tecnica.bills.view.EmployeeBillView;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

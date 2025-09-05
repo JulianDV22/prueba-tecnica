@@ -64,6 +64,7 @@ public interface BillRepository extends JpaRepository<BillDomain, Long> {
 
     @Query("""
             select   b.id as id,
+                     e.documentNumber as employeeDocumentNumber,
                      e.names as employeeNames,
                      e.surnames as employeeSurnames,
                      t.destination as travelDestination,
